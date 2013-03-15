@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-03-14T00:00:00Z" product-name="fluid_info">
+		<header/>
+		<body>
+
+			<trans-unit id="config.enablePathInfo" xml:space="preserve">
+				<source>Enable Path Info</source>
+				<target>Pfadinformationen anzeigen</target>
+			</trans-unit>
+			<trans-unit id="config.enableVarInfo" xml:space="preserve">
+				<source>Enable Variable Info</source>
+				<target>Variableninformationen anzeigen</target>
+			</trans-unit>
+			<trans-unit id="toolbaritem.title" xml:space="preserve">
+				<source>Enable/Disable fluid information</source>
+				<target>An-/Ausschalten der Fluidinformationen</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
