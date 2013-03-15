@@ -1,5 +1,5 @@
-# cat=basic/enable/120; type=boolean; label=LLL:EXT:fluid_info/Resources/Private/Language/locallang_be.xml:extmng.enablePathInfo
+# cat=basic/enable/120; type=boolean; label=LLL:EXT:fluid_info/Resources/Private/Language/locallang_db.xlf:config.enablePathInfo
 showPathInfo = 0
 
-# cat=basic/enable/120; type=boolean; label=LLL:EXT:fluid_info/Resources/Private/Language/locallang_be.xml:extmng.enableVarInfo
+# cat=basic/enable/120; type=boolean; label=LLL:EXT:fluid_info/Resources/Private/Language/locallang_db.xlf:config.enableVarInfo
 showVariable = 0
