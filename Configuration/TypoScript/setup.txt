@@ -1,76 +1,76 @@
 config.tx_extbase {
-    objects {
-        Tx_Fluid_View_StandaloneView {
-            className = Tx_FluidInfo_View_StandaloneView
-        }
-        Tx_Fluid_View_TemplateView {
-            className = Tx_FluidInfo_View_TemplateView
-        }
-    }
+	objects {
+		Tx_Fluid_View_StandaloneView {
+			className = Tx_FluidInfo_View_StandaloneView
+		}
+		Tx_Fluid_View_TemplateView {
+			className = Tx_FluidInfo_View_TemplateView
+		}
+	}
 }
 
 plugin.tx_fluidpathinfo._CSS_DEFAULT_STYLE (
-    h5.fluid_path_info_partial {
-        background: none repeat scroll 0 0 blue;
-        font-size: 10px;
-        line-height: 20px;
-        color:#fff;
-        margin:0;
-    }
-    h5.fluid_path_info_partial a {
-        color:#fff;
-        text-decoration:underline;
-    }
-    h5.fluid_path_info_partial a:hover {
-        color:#fff;
-    }
-    div.fluid_path_info_partial {
-        border:1px solid blue;
-    }
-    h5.fluid_path_info_template {
-        background: none repeat scroll 0 0 red;
-        font-size: 10px;
-        line-height: 20px;
-        color:#fff;
-        min-width:200px;
-        margin:0;
-    }
-    h5.fluid_path_info_template a {
-        color:#fff;
-        text-decoration:underline;
-    }
-    h5.fluid_path_info_template a:hover {
-        color:#fff;
-    }
-    div.fluid_path_info_template {
-        border:1px solid red;
-    }
-    h5.fluid_path_info_layout {
-        background: none repeat scroll 0 0 green;
-        font-size: 10px;
-        line-height: 20px;
-        color:#fff;
-        margin:0;
-    }
-    h5.fluid_path_info_layout a {
-        color:#fff;
-        text-decoration:underline;
-    }
-    h5.fluid_path_info_layout a:hover {
-        color:#fff;
-    }
-    div.fluid_path_info_layout {
-        border:1px solid green;
-    }
-    div.fluid_path_info_identifiers {
-        display:none;
-        background: none repeat scroll 0 0 #efe4b0;
-        min-height:20px;
-        margin: 0 0 10px 0;
-    }
-    div.fluid_path_info_identifiers p {
-        font-size: 10px;
-        line-height: 15px;
-        margin: 0;
-    }
+	h5.fluid_path_info_partial {
+		background: none repeat scroll 0 0 blue;
+		font-size: 12px;
+		line-height: 20px;
+		color:#fff;
+		margin:0;
+	}
+	h5.fluid_path_info_partial a {
+		color:#fff;
+		text-decoration:underline;
+	}
+	h5.fluid_path_info_partial a:hover {
+		color:#fff;
+	}
+	div.fluid_path_info_partial {
+		border:1px solid blue;
+	}
+	h5.fluid_path_info_template {
+		background: none repeat scroll 0 0 red;
+		font-size: 12px;
+		line-height: 20px;
+		color:#fff;
+		min-width:200px;
+		margin:0;
+	}
+	h5.fluid_path_info_template a {
+		color:#fff;
+		text-decoration:underline;
+	}
+	h5.fluid_path_info_template a:hover {
+		color:#fff;
+	}
+	div.fluid_path_info_template {
+		border:1px solid red;
+	}
+	h5.fluid_path_info_layout {
+		background: none repeat scroll 0 0 green;
+		font-size: 12px;
+		line-height: 20px;
+		color:#fff;
+		margin:0;
+	}
+	h5.fluid_path_info_layout a {
+		color:#fff;
+		text-decoration:underline;
+	}
+	h5.fluid_path_info_layout a:hover {
+		color:#fff;
+	}
+	div.fluid_path_info_layout {
+		border:1px solid green;
+	}
+	div.fluid_path_info_identifiers {
+		display:none;
+		background: none repeat scroll 0 0 #efe4b0;
+		min-height:20px;
+		margin: 0 0 10px 0;
+	}
+	div.fluid_path_info_identifiers p {
+		font-size: 12px;
+		line-height: 15px;
+		margin: 0;
+	}
 )
