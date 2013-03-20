@@ -25,7 +25,6 @@
 ***************************************************************/
 
 require_once(PATH_typo3 . 'interfaces/interface.backend_toolbaritem.php');
-$GLOBALS['LANG']->includeLLFile('EXT:fluid_info/Resources/Private/Languages/locallang_db.xlf');
 
 /**
  * Toolbar icon to enable or disable fluid information (for admin users only)
@@ -36,6 +35,7 @@ class Tx_FluidInfo_Utility_Toolbar implements backend_toolbarItem {
 	private $backendReference;
 	private $extkey = 'fluid_info';
 	private $settings;
+	const DEFAULT_TRANSLATION_FILE = 'LLL:EXT:fluid_info/Resources/Private/Language/locallang_db.xlf';
 
 	/**
 	 * Constructor
@@ -70,11 +70,11 @@ class Tx_FluidInfo_Utility_Toolbar implements backend_toolbarItem {
 			$status = 'on';
 		}
 
-		$title = $GLOBALS['LANG']->getLL('toolbaritem.title', TRUE);
+		$title = Tx_Extbase_Utility_Localization::translate(self::DEFAULT_TRANSLATION_FILE . ':toolbaritem.title');
 		$html = '<a class="toolbar-item ' . $status .
-				'" href="ajax.php?ajaxID=Tx_FluidInfo_Utility_Toolbar::executeAjaxRequest"><img src="' .
+				'" href="ajax.php?ajaxID=Tx_FluidInfo_Utility_Toolbar::executeAjaxRequest" title="' . $title . '"><img src="' .
 				t3lib_extMgm::extRelPath($this->extkey) . 'Resources/Public/Icons/toolbar_' . $status . '.png"' .
-				' alt="' . $title . '" title="' . $title . '" /></a>';
+				' alt="' . $title . '" /></a>';
 
 		return $html;
 	}
