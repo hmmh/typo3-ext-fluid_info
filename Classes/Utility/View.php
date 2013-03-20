@@ -104,8 +104,15 @@ class Tx_FluidInfo_Utility_View {
 	 * @return string
 	 */
 	protected function render($path, $content, $class) {
+		$GLOBALS['TSFE']->additionalHeaderData['fluid_info'] =
+		'<script type="text/javascript">
+			function fi_vartoggle(elem) {
+				elem = elem.parentNode.nextSibling;
+				elem.style.display = (elem.style.display != \'block\' ? \'block\' : \'\' );
+			}
+		</script>';
 		$html  = '<div class="' . $class . '"><h5 class="' . $class . '">' . $path;
-		$html .= ($this->showVarInfo()) ? '&nbsp;<a href="#" onclick="$(this).parent().next().slideToggle(0); return false;">(Variables)</a></h5>' : '</h5>';
+		$html .= ($this->showVarInfo()) ? '&nbsp;<a href="#" onclick="fi_vartoggle(this); return false;">(Variables)</a></h5>': '</h5>';
 		$html .= ($this->showVarInfo()) ? '<div class="fluid_path_info_identifiers">' . $this->renderVarInfo() . '</div>' : '';
 		$html .= $content;
 		$html .= '</div>';
